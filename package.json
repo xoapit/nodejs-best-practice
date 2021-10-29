@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "axios": "^0.23.0",
+    "cookie-parser": "~1.4.4",
+    "date-holidays": "^3.11.0",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "express-winston": "^4.2.0",
+    "http-errors": "~1.6.3",
+    "husky": "^7.0.4",
+    "jade": "~1.11.0",
+    "moment": "^2.29.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.14",
+    "weather-js": "^2.0.0",
+    "winston": "^3.3.3"
+  },
+  "name": "node-typescript-api",
+  "version": "1.0.0",
+  "description": "Build an App with Node.js, Express, and TypeScript",
+  "main": "app.ts",
+  "scripts": {
+    "dev": "nodemon ./typescript/src/app.ts",
+    "start": "node ./typescript/production-server/src/app.js",
+    "build": "tsc --project ./typescript/tsconfig.json",
+    "lint": "eslint ./typescript/src/**/*.ts",
+    "format": "eslint ./typescript/src/**/*.ts --fix"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.1.0",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
